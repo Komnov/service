@@ -1,0 +1,105 @@
+#brand-page {
+    background-image: url(/assets/images/brand/brand-bg.png);
+    width: 100%;
+    height: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    & .main__container {
+        & .like_h1 {
+            & span {
+                color: $orange;
+                display: block;
+                width: 100%;
+            }
+        }
+        & img {
+            min-width: initial;
+            max-width: 100%;
+            object-fit: contain;
+            min-height: 300px;
+            max-height: 400px;
+        }
+    }
+    & .form__contaner {
+        margin: 20px 0 0 0; 
+            & form {
+                max-width: 300px;
+                display: flex;
+                flex-direction: column;
+                background-color: $grey;
+                color: $fontf;
+                margin: 0 0 0 30px;
+                padding: 20px ;
+                border-radius: 4px;
+                box-shadow: 0px 6px 7px 0px #3333335e;
+                & .title {
+                    font-weight: 600;
+                    font-size: 27px;
+                    margin: 0 0 13px 0;
+                }
+                & .sale__date {
+                    color: $orange;
+                    font-size: 16px;
+                    margin: 3px 0 18px 0;
+                    font-weight: 300;
+                }
+                & .gift {
+                    border: 1px dashed $orange;
+                    padding: 10px 15px;
+                    border-radius: 4px;
+                    color: $orange;
+                    margin: 0 0 15px 0;
+                    & span {
+                        display: flex;
+                        align-items: center;
+                        &::before {
+                            content: '';
+                            background-image: url(/assets/images/icons/shield.svg);
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            width: 28px;
+                            height: 32px;
+                            display: inline-block;
+                            margin: 0 10px 0 0;
+                            background-position: center right;
+                        }
+                    }
+                }
+            }
+            & .form {
+                & input {
+                    background-color: #fff;
+                    padding: 16px;
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    border-radius: 4px;
+                    outline: none;
+                    margin: 0 0 10px 0;
+                }
+                button {
+                    background-color: $orange;
+                    border: none;
+                    border-radius: 4px;
+                    color: $fontf;
+                    font-size: 16px;
+                    font-weight: 400;
+                    padding: 16px;
+                    width: 100%;
+                }
+                & .pc {
+                    display: inline-block;
+                    margin: 10px 0 0 0;
+                    font-size: 11px;
+                    text-align: center;
+                    & a {
+                        color: $orange;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }

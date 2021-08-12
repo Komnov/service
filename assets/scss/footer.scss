@@ -1,0 +1,139 @@
+$orange: #F78F1E;
+$grey: #415968;
+$green: #5AC297;
+$border: #BEBEBE;
+$fontf: #fff;
+$fontd: #333;
+
+#footer {
+    background-color: $grey;
+    color: $fontf;
+    font-weight: 400;
+    padding: 30px 0 40px 0;
+    margin: 30px 0 0 0;
+    & .footer__container {
+        & > * {
+            display: flex;
+            flex-direction: column;
+        }
+        & .footer__contacts {
+            & .footer__contacts_logo {
+                & img {
+                    max-width: 74px;
+                    object-fit: contain;
+                }
+            }
+            & .footer__contacts_about {
+                padding: 15px 0;
+                line-height: 18px;
+            }
+            & .footer__contacts_adress {
+                display: flex;
+                align-items: center;
+                &::before {
+                    content: '';
+                    background-image: url(/assets/images/icons/geo.svg);
+                    background-size: contain;
+                    width: 12px;
+                    height: 17px;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    margin: 0 10px 0 0;
+                }
+            }
+            & .footer__contacts_phones {
+                display: flex;
+                flex-direction: column;
+                margin: 15px 0 25px 0;
+                line-height: 18px;
+                & a {
+                    color: $fontf;
+                }
+            }
+            & .callback__popup {
+                margin: 0 30px 0 0;
+                position: relative;
+                color: #F78F1E;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                & img {
+                    width: 14px;
+                    height: 14px;
+                    margin: 0 10px 0 0;
+                }
+                & span {
+                    border-bottom: 1px dashed #F78F1E;
+                }
+            }
+        }
+        & .footer__nav {
+            display: flex;
+            flex-direction: column;
+            padding: 0 10px 0 0;
+            & .footer__nav_title {
+                color: $orange;
+                font-weight: 600;
+                font-size: 18px;
+                margin: 0 0 25px 0;
+            }
+            & .footer__nav_list, & a {
+                color: $fontf;
+            }
+            & .footer__nav_list {
+                & > *:not(:last-child) {
+                    margin: 0 0 20px 0;
+                }
+            }
+            & .footer__geo {
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0 10px 0;
+                & select {
+                    background-color: transparent;
+                    color: $fontf;
+                    border: 1px solid #A5BBC9;
+                    padding: 9px;
+                    width: 80%;
+                    margin: 10px 0 0 0;
+                    border-radius: 6px;
+                    & option {
+                        background-color: $grey;
+                    }
+                }
+            }
+            & .footer-pc a {
+                color: $orange;
+                line-height: 18px;
+            }
+            & .social__links {
+                margin: 20px 0 0 ;
+                display: flex;
+                align-items: center;
+                & > a {
+                    display: flex;
+                    align-items: center;
+                    background-position: center;
+
+                }
+                & .vk_link {
+                    background-image: url(/assets/images/icons/vk.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    width: 21px;
+                    height: 13px;
+                    margin: 0 23px 0 0;
+                }
+                & .inst_link {
+                    background-image: url(/assets/images/icons/Insta.svg);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+    }
+}

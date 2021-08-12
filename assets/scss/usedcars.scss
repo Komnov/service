@@ -1,0 +1,64 @@
+#horizon-filter {
+    & .horizon-filter_container {
+        display: flex;
+        justify-content: space-between;
+        & .filter__block {
+            border: 1px dashed #C4C4C4;
+            padding: 25px 30px;
+            border-radius: 4px;
+            & .title {
+                font-size: 20px;
+                font-weight: 500;
+                margin: 0 0 20px 0;
+                display: block;
+                width: 100%;
+            }
+            & .links {
+                display: grid;  
+                grid-template-columns: 1fr 1fr;
+                & li {
+                    display: block;
+                    margin: 0 0 13px 0;
+                    & a {
+                        color: #666666;
+                        font-weight: 500;
+                        font-size: 14px;
+                        border: 2px solid transparent;
+                        padding: 4px 7px;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        &:hover {
+                            border: 2px solid $orange;
+                        }
+                    }
+                }
+            }
+        }
+        & .by__mark {
+            & .links {
+                display: grid;  
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+        }
+    }
+    & .hide__filter {
+        cursor: pointer;
+        display: flex;
+        border: 1px solid $orange;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 4px;
+        margin: 20px 0 0 0;
+        padding: 20px 0;
+    }
+}
+
+.filter__search {
+    & .like_h3 {
+        & span {
+            color: $orange;
+        }
+    }
+}

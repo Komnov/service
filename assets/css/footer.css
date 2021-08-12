@@ -1,0 +1,182 @@
+#footer {
+  background-color: #415968;
+  color: #fff;
+  font-weight: 400;
+  padding: 30px 0 40px 0;
+  margin: 30px 0 0 0;
+}
+
+#footer .footer__container > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#footer .footer__container .footer__contacts .footer__contacts_logo img {
+  max-width: 74px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#footer .footer__container .footer__contacts .footer__contacts_about {
+  padding: 15px 0;
+  line-height: 18px;
+}
+
+#footer .footer__container .footer__contacts .footer__contacts_adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer__container .footer__contacts .footer__contacts_adress::before {
+  content: '';
+  background-image: url(/assets/images/icons/geo.svg);
+  background-size: contain;
+  width: 12px;
+  height: 17px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+#footer .footer__container .footer__contacts .footer__contacts_phones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px 0 25px 0;
+  line-height: 18px;
+}
+
+#footer .footer__container .footer__contacts .footer__contacts_phones a {
+  color: #fff;
+}
+
+#footer .footer__container .footer__contacts .callback__popup {
+  margin: 0 30px 0 0;
+  position: relative;
+  color: #F78F1E;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer__container .footer__contacts .callback__popup img {
+  width: 14px;
+  height: 14px;
+  margin: 0 10px 0 0;
+}
+
+#footer .footer__container .footer__contacts .callback__popup span {
+  border-bottom: 1px dashed #F78F1E;
+}
+
+#footer .footer__container .footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 10px 0 0;
+}
+
+#footer .footer__container .footer__nav .footer__nav_title {
+  color: #F78F1E;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0 0 25px 0;
+}
+
+#footer .footer__container .footer__nav .footer__nav_list, #footer .footer__container .footer__nav a {
+  color: #fff;
+}
+
+#footer .footer__container .footer__nav .footer__nav_list > *:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+
+#footer .footer__container .footer__nav .footer__geo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 0 10px 0;
+}
+
+#footer .footer__container .footer__nav .footer__geo select {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #A5BBC9;
+  padding: 9px;
+  width: 80%;
+  margin: 10px 0 0 0;
+  border-radius: 6px;
+}
+
+#footer .footer__container .footer__nav .footer__geo select option {
+  background-color: #415968;
+}
+
+#footer .footer__container .footer__nav .footer-pc a {
+  color: #F78F1E;
+  line-height: 18px;
+}
+
+#footer .footer__container .footer__nav .social__links {
+  margin: 20px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .footer__container .footer__nav .social__links > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+}
+
+#footer .footer__container .footer__nav .social__links .vk_link {
+  background-image: url(/assets/images/icons/vk.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 21px;
+  height: 13px;
+  margin: 0 23px 0 0;
+}
+
+#footer .footer__container .footer__nav .social__links .inst_link {
+  background-image: url(/assets/images/icons/Insta.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* clear styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'inter', Arial, sans-serif;
+  text-decoration: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:active, a:focus {
+  outline: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:active, textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.row > * {
+  padding: 0 0;
+}
+
+.row {
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/*clear styles finish*/
+@media (min-width: 992px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1263px !important;
+  }
+}
+
+body {
+  font-family: 'inter', Arial, sans-serif;
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #fff;
+  letter-spacing: -0.5px;
+}
+
+.like_h3 {
+  color: #333;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 40px 0 27px 0;
+}
+
+.like_h1 {
+  font-size: 54px;
+  font-weight: 700;
+  color: #333;
+  margin: 5px 0 25px 0;
+}
+
+#breadcrumbs {
+  margin: 20px 0;
+}
+
+#breadcrumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#breadcrumbs ul li {
+  margin: 0 7px 0 0;
+}
+
+#breadcrumbs ul li a {
+  color: #F78F1E;
+}
+
+#breadcrumbs ul li a:after {
+  content: '»';
+  margin: 0 0 0 7px;
+}
+
+#breadcrumbs ul li:last-child a {
+  color: #333;
+}
+
+#breadcrumbs ul li:last-child a:after {
+  content: none;
+}
+
+.hidden {
+  display: none;
+}
