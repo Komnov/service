@@ -53,6 +53,7 @@
                     & span {
                         display: flex;
                         align-items: center;
+                        line-height: 18px;
                         &::before {
                             content: '';
                             background-image: url(/assets/images/icons/shield.svg);

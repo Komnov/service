@@ -107,10 +107,10 @@
 <section id="credit-page">
     <div class="container">
         <div class="row credit-step">
-            <div class="col-xl-3 col-md-3 step_item"><img src="/assets/images/icons" alt=""><span>Заполняете заявку на сайте</span></div>
-            <div class="col-xl-3 col-md-3 step_item"><img src="/assets/images/icons" alt=""><span>Ждете решения в течении 15 минут</span></div>
-            <div class="col-xl-3 col-md-3 step_item"><img src="/assets/images/icons" alt=""><span>Оформляете кредит у нас в салоне</span></div>
-            <div class="col-xl-3 col-md-3 step_item"><img src="/assets/images/icons" alt=""><span>Отправляетесь домой на новом авто</span></div>
+            <div class="col-xl-3 col-md-3 step_item"><img src="/assets/images/icons/anket.svg" alt=""><span>Заполняете <br>заявку на сайте</span></div>
+            <div class="col-xl-3 col-md-3 step_item"><img src="/assets/images/icons/time.svg" alt=""><span>Ждете решения <br>в течении 15 минут</span></div>
+            <div class="col-xl-3 col-md-3 step_item"><img src="/assets/images/icons/blank.svg" alt=""><span>Оформляете кредит <br>у нас в салоне</span></div>
+            <div class="col-xl-3 col-md-3 step_item"><img src="/assets/images/icons/time-adv.svg" alt=""><span>Отправляетесь <br>домой на новом авто</span></div>
         </div>
         <div class="row credit__form">
             <form action="">
@@ -132,10 +132,12 @@
                         <option value="">Model 1</option>
                         <option value="">Model 2</option>
                     </select>
-                    <select name="" id="">
+                    <select name="" id="color-cars">
                         <option value="" selected disabled>Цвет</option>
-                        <option value="">Color 1</option>
-                        <option value="">Color 2</option>
+                        <option value="kiayellow.png">Желтый</option>
+                        <option value="kiared.png">Красный</option>
+                        <option value="kiagrey.png">Серый</option>
+                        <option value="kiaorange.png">Оранжевый</option>
                     </select>
                     <div class="credit-date"><span>Срок кредита:</span>
                         <select name="" id="">
@@ -150,7 +152,7 @@
                             <option value="">400 000 р.</option>
                         </select>
                     </div>
-                    <span>Ваши данные для связи</span>
+                    <span class="credit_name">Ваши данные для связи</span>
                     <input type="text" placeholder="ФИО">
                     <input type="text" placeholder="Контактный телефон">
                     <button>Отправить заявку</button>
@@ -158,12 +160,12 @@
                 </div>
                 <div class="img_block">
                     <div class="car_image">
-                        <img src="" alt="">
+                        <img src="/assets/images/other/form-car.png" alt="">
                     </div>
                     <div class="credit__price">
                         <div class="item"><span>Стоимость авто:</span><span class="rubl">1 789 000</span></div>
                         <div class="item"><span>Срок кредита:</span><span>18 мес.</span></div>
-                        <div class="item"><span>Ставка:</span></span>1.9%<span></div>
+                        <div class="item"><span>Ставка:</span><span>1.9%</span></div>
                         <div class="item"><span>Ежемес. платеж</span><span class="rubl">29 817</span></div>
                         <div class="pc-text">Приведенные расчеты калькулятора являются ориентировочными и ни прикаких условиях не являются публичной офертой (ст.437 ГК РФ)   </div>
                     </div>
@@ -176,27 +178,27 @@
             <div class="adv-items">
                 <div class="adv-item">
                     <span class="title">от 0 руб.</span>
-                    <span>первоначальный взнос</span>
+                    <span>первоначальный <br>взнос</span>
                 </div>
                 <div class="adv-item">
                     <span class="title">от 1,9%</span>
-                    <span>процент по кредиту годовых</span>
+                    <span>процент по <br>кредиту годовых</span>
                 </div>
                 <div class="adv-item">
                     <span class="title">98%</span>
-                    <span>одобрение по кредиту</span>
+                    <span>одобрение по <br>кредиту</span>
                 </div>
                 <div class="adv-item">
                     <span class="title">до 7 лет</span>
-                    <span>максимальный срок кредитования</span>
+                    <span>максимальный <br>срок кредитования</span>
                 </div>
                 <div class="adv-item">
                     <span class="title">до 3,5 млн.</span>
-                    <span>максимальная сумма кредитования</span>
+                    <span>максимальная <br>сумма кредитования</span>
                 </div>
                 <div class="adv-item">
                     <span class="title">КАСКО</span>
-                    <span>на автомобиль по выбору клиента</span>
+                    <span>на автомобиль по <br>выбору клиента</span>
                 </div>
             </div>
         </div>
@@ -233,6 +235,194 @@
             </div>
         </div>
     </div>
+</section>
+
+<section class="popular__cars">
+  <div class="container">
+    <div class="row cars__cards">
+      <div class="like_h3">Новые автомобили</div>
+      <div class="col-xl-3 col-md-3 car__card">
+        <div class="car__card_interaction">
+          <a href="" class="to-favorites"></a>
+          <a href="" class="to-compare"></a>
+        </div>
+        <div class="car__card_stickers">
+          <span class="new">Новинка</span>
+        </div>
+        <a href="" class="car__card_img"><img src="/assets/images/other/car1.png" alt=""></a>
+        <a href="" class="car__card_title">Changan CS35 PLUS</a>
+        <ul class="car__card_teh">
+          <li class="car__teh-engine">210 л.с.</li>
+          <li class="car__teh-gear">6AT</li>
+          <li class="car__teh-rate">6.5 л.</li>
+        </ul>
+        <div class="car__card_price">
+          <div class="car__card_price-old">от 1 034 000</div>
+          <div class="car__card_price-sale">- 169 000</div>
+          <div class="car__card_price-main">от 865 000</div>
+          <div class="car__card_price-credit"><p>от 4 560 <span class="per-month">/мес.</span></p></div>
+        </div>
+        <a href="" class="car__card_link">Подробнее о модели</a>
+      </div>
+      <div class="col-xl-3 col-md-3 car__card">
+        <div class="car__card_interaction">
+          <a href="" class="to-favorites"></a>
+          <a href="" class="to-compare"></a>
+        </div>
+        <div class="car__card_stickers">
+        </div>
+        <a href="" class="car__card_img"><img src="/assets/images/other/car1.png" alt=""></a>
+        <a href="" class="car__card_title">Changan CS35 PLUS</a>
+        <ul class="car__card_teh">
+          <li class="car__teh-engine">210 л.с.</li>
+          <li class="car__teh-gear">6AT</li>
+          <li class="car__teh-rate">6.5 л.</li>
+        </ul>
+        <div class="car__card_price">
+          <div class="car__card_price-old">от 1 034 000</div>
+          <div class="car__card_price-sale">- 169 000</div>
+          <div class="car__card_price-main">от 865 000</div>
+          <div class="car__card_price-credit"><p>от 4 560 <span class="per-month">/мес.</span></p></div>
+        </div>
+        <a href="" class="car__card_link">Подробнее о модели</a>
+      </div>
+      <div class="col-xl-3 col-md-3 car__card">
+        <div class="car__card_interaction">
+          <a href="" class="to-favorites"></a>
+          <a href="" class="to-compare"></a>
+        </div>
+        <div class="car__card_stickers">
+          <span class="top">Топ продаж</span>
+        </div>
+        <a href="" class="car__card_img"><img src="/assets/images/other/car1.png" alt=""></a>
+        <a href="" class="car__card_title">Changan CS35 PLUS</a>
+        <ul class="car__card_teh">
+          <li class="car__teh-engine">210 л.с.</li>
+          <li class="car__teh-gear">6AT</li>
+          <li class="car__teh-rate">6.5 л.</li>
+        </ul>
+        <div class="car__card_price">
+          <div class="car__card_price-old">от 1 034 000</div>
+          <div class="car__card_price-sale">- 169 000</div>
+          <div class="car__card_price-main">от 865 000</div>
+          <div class="car__card_price-credit"><p>от 4 560 <span class="per-month">/мес.</span></p></div>
+        </div>
+        <a href="" class="car__card_link">Подробнее о модели</a>
+      </div>
+      <div class="col-xl-3 col-md-3 car__card">
+        <div class="car__card_interaction">
+          <a href="" class="to-favorites"></a>
+          <a href="" class="to-compare"></a>
+        </div>
+        <div class="car__card_stickers">
+          <span class="new">Новинка</span>
+        </div>
+        <a href="" class="car__card_img"><img src="/assets/images/other/car1.png" alt=""></a>
+        <a href="" class="car__card_title">Changan CS35 PLUS</a>
+        <ul class="car__card_teh">
+          <li class="car__teh-engine">210 л.с.</li>
+          <li class="car__teh-gear">6AT</li>
+          <li class="car__teh-rate">6.5 л.</li>
+        </ul>
+        <div class="car__card_price">
+          <div class="car__card_price-old">от 1 034 000</div>
+          <div class="car__card_price-sale">- 169 000</div>
+          <div class="car__card_price-main">от 865 000</div>
+          <div class="car__card_price-credit"><p>от 4 560 <span class="per-month">/мес.</span></p></div>
+        </div>
+        <a href="" class="car__card_link">Подробнее о модели</a>
+      </div>
+      <div class="col-xl-3 col-md-3 car__card">
+        <div class="car__card_interaction">
+          <a href="" class="to-favorites"></a>
+          <a href="" class="to-compare"></a>
+        </div>
+        <div class="car__card_stickers">
+        </div>
+        <a href="" class="car__card_img"><img src="/assets/images/other/car1.png" alt=""></a>
+        <a href="" class="car__card_title">Changan CS35 PLUS</a>
+        <ul class="car__card_teh">
+          <li class="car__teh-engine">210 л.с.</li>
+          <li class="car__teh-gear">6AT</li>
+          <li class="car__teh-rate">6.5 л.</li>
+        </ul>
+        <div class="car__card_price">
+          <div class="car__card_price-old">от 1 034 000</div>
+          <div class="car__card_price-sale">- 169 000</div>
+          <div class="car__card_price-main">от 865 000</div>
+          <div class="car__card_price-credit"><p>от 4 560 <span class="per-month">/мес.</span></p></div>
+        </div>
+        <a href="" class="car__card_link">Подробнее о модели</a>
+      </div>
+      <div class="col-xl-3 col-md-3 car__card">
+        <div class="car__card_interaction">
+          <a href="" class="to-favorites"></a>
+          <a href="" class="to-compare"></a>
+        </div>
+        <div class="car__card_stickers">
+          <span class="soon">Скоро</span>
+        </div>
+        <a href="" class="car__card_img"><img src="/assets/images/other/car1.png" alt=""></a>
+        <a href="" class="car__card_title">Changan CS35 PLUS</a>
+        <ul class="car__card_teh">
+          <li class="car__teh-engine">210 л.с.</li>
+          <li class="car__teh-gear">6AT</li>
+          <li class="car__teh-rate">6.5 л.</li>
+        </ul>
+        <div class="car__card_price">
+          <div class="car__card_price-old">от 1 034 000</div>
+          <div class="car__card_price-sale">- 169 000</div>
+          <div class="car__card_price-main">от 865 000</div>
+          <div class="car__card_price-credit"><p>от 4 560 <span class="per-month">/мес.</span></p></div>
+        </div>
+        <a href="" class="car__card_link">Подробнее о модели</a>
+      </div>
+      <div class="col-xl-3 col-md-3 car__card">
+        <div class="car__card_interaction">
+          <a href="" class="to-favorites"></a>
+          <a href="" class="to-compare"></a>
+        </div>
+        <div class="car__card_stickers">
+        </div>
+        <a href="" class="car__card_img"><img src="/assets/images/other/car1.png" alt=""></a>
+        <a href="" class="car__card_title">Changan CS35 PLUS</a>
+        <ul class="car__card_teh">
+          <li class="car__teh-engine">210 л.с.</li>
+          <li class="car__teh-gear">6AT</li>
+          <li class="car__teh-rate">6.5 л.</li>
+        </ul>
+        <div class="car__card_price">
+          <div class="car__card_price-old">от 1 034 000</div>
+          <div class="car__card_price-sale">- 169 000</div>
+          <div class="car__card_price-main">от 865 000</div>
+          <div class="car__card_price-credit"><p>от 4 560 <span class="per-month">/мес.</span></p></div>
+        </div>
+        <a href="" class="car__card_link">Подробнее о модели</a>
+      </div>
+      <div class="col-xl-3 col-md-3 car__card">
+        <div class="car__card_interaction">
+          <a href="" class="to-favorites"></a>
+          <a href="" class="to-compare"></a>
+        </div>
+        <div class="car__card_stickers">
+        </div>
+        <a href="" class="car__card_img"><img src="/assets/images/other/car1.png" alt=""></a>
+        <a href="" class="car__card_title">Changan CS35 PLUS</a>
+        <ul class="car__card_teh">
+          <li class="car__teh-engine">210 л.с.</li>
+          <li class="car__teh-gear">6AT</li>
+          <li class="car__teh-rate">6.5 л.</li>
+        </ul>
+        <div class="car__card_price">
+          <div class="car__card_price-old">от 1 034 000</div>
+          <div class="car__card_price-sale">- 169 000</div>
+          <div class="car__card_price-main">от 865 000</div>
+          <div class="car__card_price-credit"><p>от 4 560 <span class="per-month">/мес.</span></p></div>
+        </div>
+        <a href="" class="car__card_link">Подробнее о модели</a>
+      </div>
+    </div>
+  </div>
 </section>
 
 

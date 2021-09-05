@@ -6,7 +6,7 @@ new Swiper('.index-slider', {
     },
     centeredSlides: true,
     slidesPerView: 1,
-    loop: true,
+    loop: true
 });
 
 // swiper product page gallery
@@ -122,5 +122,17 @@ $(function(){
     $('.anchor_links a').on('click', function(e){
         $('html,body').stop().animate({ scrollTop: $('#some_point').offset().top }, 1000);
         e.preventDefault();
+    });
+});
+
+// замена картиизображений машины на в форме кридита
+$(function() {
+    const element = document.querySelector('#color-cars');
+    $(element).on("change", function() {
+    const element = document.querySelector('#color-cars');
+    let carColor = element.value;
+    $('.credit__form .car_image img').attr('src', '/assets/images/other/' + carColor);
+    $('.credit__form').css('background-image', 'none');
+    $('.credit__form .credit__price').css('display', 'flex');
     });
 });

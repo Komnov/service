@@ -76,3 +76,11 @@ body {
 .hidden {
     display: none;
 }
+
+//slider
+.swiper-container {
+    min-width: 0px!important;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}

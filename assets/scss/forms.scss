@@ -1,0 +1,449 @@
+$orange: #F78F1E;
+$grey: #415968;
+$green: #5AC297;
+$border: #BEBEBE;
+$fontf: #fff;
+$fontd: #333;
+
+#tradein_page {
+    & .tradein_adv {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 30px 0;
+        & .adv-item {
+            display: flex;
+            width: 400px;
+            border: 1px dashed #C4C4C4;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 0px;
+            & img {
+                width: 45px;
+                height: 45px;
+                object-fit: contain;
+                margin: 0 20px 0 0;
+            }
+            & span {
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+    }
+    & .tradein-form {
+        background-image: url(/assets/images/other/form1-bg.jpg);
+        background-size: cover;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 35px 35px;
+        & .form_container {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            & .tradein__form-title {
+                width: 100%;
+                font-size: 32px;
+                font-weight: 500;
+                margin: 0 0 20px 0;
+            }
+            & input {
+                width: 49%;
+                background-color: #fff;
+                padding: 20px 15px;
+                border-radius: 6px;
+                border: 1px solid #CACACA;
+                outline: none;
+                margin: 0 0 10px 0;
+                font-size: 16px;
+            }
+            & select {
+                width: 49%;
+                background-color: #fff;
+                padding: 20px 15px;
+                border-radius: 6px;
+                border: 1px solid $orange;
+                outline: none;
+                margin: 0 0 10px 0;
+                font-size: 16px;
+            }
+            & textarea {
+                width: 100%;
+                background-color: #fff;
+                padding: 20px 15px;
+                border-radius: 6px;
+                border: 1px solid #CACACA;
+                outline: none;
+                margin: 0 0 10px 0;
+                font-size: 16px;
+                resize:none
+            }
+            & .tradein__form-subtitle {
+                width: 100%;
+                font-weight: 400;
+                font-size: 16px;
+                margin: 25px 0 15px 0;
+                display: flex;
+            }
+            & button {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $fontf;
+                font-weight: 500;
+                font-size: 18px;
+                padding: 16px 0;
+                border-radius: 6px;
+                margin: 10px 0 15px 0;
+                outline: none;
+                border: none;
+                background-color: $orange;
+            }
+            & .tradein__form-pc {
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                color: #666666;
+                & a {
+                    color: $orange;
+                    margin: 0 0 0 5px;
+                }
+            }
+        }
+    }
+    & .ads-banner {
+        margin: 25px 0 0 0;
+        border-radius: 6px;
+        & a {
+            display: flex;
+            width: 100%;
+            height: initial;
+            & img {
+                width: 100%;
+                height: initial;
+                object-fit: cover;
+            }
+        }
+    }
+    & .tradein-about {
+        & p {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    & .tradein_adv-about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & .adv-item {
+            display: flex;
+            flex-direction: column;
+            padding: 40px 20px 25px 20px;
+            border: 1px solid #FBDFC0;
+            border-radius: 6px;
+            align-items: center;
+            justify-content: flex-start;
+            width: 23%;
+            & img {
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+            }
+            & .adv-item-title {
+                font-size: 20px;
+                font-weight: 500;
+                text-align: center;
+                margin: 20px 0 15px 0;
+                line-height: 24px;
+            }
+            & span:not(.adv-item-title) {
+                font-size: 16px;
+                line-height: 28px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+#credit-page {
+    & .credit-step {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 30px 0;
+        & .step_item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 290px;
+            padding: 16px 20px 16px 40px;
+            border: 1px dashed #C4C4C4;
+            border-radius: 6px;
+            & img {
+                min-width: 38px;
+                max-height: 44px;
+                min-height: 43px;
+                object-fit: contain;
+                margin: 0 20px 0 0;
+            }
+            & span {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    & .credit__form {
+        background-color: #F4F4F4;
+        padding: 30px;
+        border-radius: 6px;
+        display: flex;
+        background-image: url(/assets/images/other/form-bg-empty.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        & form {
+            display: flex;
+            & .form_block {
+                width: 50%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                & .form_block-title {
+                    font-size: 32px;
+                    width: 100%;
+                    font-weight: 500;
+                    margin: 0 0 15px 0;
+                }
+                & .form_block-subtitle {
+                    width: 100%;
+                    font-size: 16px;
+                    margin: 0 0 20px 0;
+                }
+                & select {
+                    outline: none;
+                    font-size: 16px;
+                    border-radius: 6px;
+                    border: 1px solid $orange;
+                    width: 49%;
+                    font-weight: 400;
+                    margin: 0 0 10px 0;
+                    padding: 15px;
+                }
+                & .credit-date {
+                    display: flex;
+                    flex-direction: column;
+                    width: 49%;
+                    flex-wrap: wrap;
+                    & span {
+                        width: 100%;
+                        font-weight: 500;
+                        margin: 10px 0 10px 0;
+                        font-size: 16px;
+                    }
+                    & select {
+                        width: 100%;
+                    }
+                }
+                & .credit_name {
+                    width: 100%;
+                    font-size: 16px;
+                    margin: 20px 0 10px 0;
+                    display: block;
+                }
+                & input {
+                    outline: none;
+                    font-size: 16px;
+                    border-radius: 6px;
+                    border: 1px solid #CACACA;
+                    width: 49%;
+                    font-weight: 400;
+                    margin: 0 0 10px 0;
+                    padding: 15px;
+                }
+                & button {
+                    width: 100%;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    color: #fff;
+                    font-weight: 500;
+                    font-size: 18px;
+                    padding: 16px 0;
+                    border-radius: 6px;
+                    margin: 10px 0 15px 0;
+                    outline: none;
+                    border: none;
+                    background-color: #F78F1E;
+                }
+                & .tradein__form-pc {
+                    display: flex;
+                    justify-content: center;
+                    color: #666666;
+                    text-align: center;
+                    width: 100%;
+                    & a {
+                        margin: 0 0 0 5px;
+                        color: $orange;
+                    }
+                }
+            }
+            & .img_block {
+                margin: 0 0 0 30px;
+                display: flex;
+                flex-wrap: wrap;
+                width: 50%;
+                align-items: flex-start;
+                & .car_image {
+                    display: flex;
+                    max-width: inherit;
+                    max-height: inherit;
+                    margin: 20px 0 0 0;
+                    & img {
+                        max-width: 600px;
+                        max-height: 310px;
+                        min-width: 600px;
+                        object-fit: contain;
+                    }
+                }
+                & .credit__price {
+                    margin: 20px 0 30px 0;
+                    padding: 15px 0 0 0;
+                    display: none;
+                    width: 100%;
+                    border-top: 1px solid #C4C4C4;
+                    flex-wrap: wrap;
+                    align-self: flex-end;
+
+                    & .item {
+                        display: flex;
+                        flex-direction: column;
+                        width: 25%;
+                        & span:first-child {
+                            width: 100%;
+                            display: block;
+                            margin: 0 0 10px 0;
+                        }
+                        & span:last-child {
+                            font-size: 20px;
+                            font-weight: 500;
+                            display: block;
+                        }
+                        & span.rubl:after {
+                            content: '\20BD';
+                            margin-left: 3px;
+                        }
+                    }
+                    & .pc-text {
+                        font-size: 11px;
+                        color: #666666;
+                        margin: 25px 0 0 0;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    & .credit-adv {
+        margin: 0 0 20px 0;
+        & p {
+            font-size: 16px;
+            line-height: 28px;
+        }
+        & .adv-items {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 0 0 0;
+            & .adv-item {
+                width: 16%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                & .title {
+                    color: $orange;
+                    font-size: 28px;
+                    display: block;
+                    margin: 0 0 17px 0;
+                }
+                & span:not(.title) {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+    & .credit-documents {
+        display: flex;
+        padding: 0 0 40px 0;
+        & .for-credit, & .for-installment {
+            width: 50%;
+            padding: 0 20px 0 0;
+            & .title {
+                font-size: 20px;
+                font-weight: 500;
+                position: relative;
+                width: 100%;
+                margin: 15px 0 40px 0;
+                display: inline-block;
+                &:after {
+                    content: '';
+                    width: 20%;
+                    background-color: $orange;
+                    height: 4px;
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                }
+            }
+            & ul {
+                display: flex;
+                flex-direction: column;
+                & li {
+                    font-size: 16px;
+                    margin: 0 0 15px 0;
+                    &:not(.step):before {
+                        content: '';
+                        background-position: bottom center;
+                        background-size: 60%;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        width: 30px;
+                        height: 16px;
+                        margin: 0 10px 0 0;
+                        background-image: url(/assets/images/icons/check-green.svg);
+                    }
+                    &.step:before {
+                        width: 30px;
+                        height: 30px;
+                        margin: 0 10px 0 0;
+                        background-color: $orange;
+                        border-radius: 6px;
+                        display: inline-flex;
+                        color: $fontf;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    &.step:nth-child(1):before{
+                        content: '1';
+                    }
+                    &.step:nth-child(2):before{
+                        content: '2';
+                    }
+                    &.step:nth-child(3):before{
+                        content: '3';
+                    }
+                    &.step:nth-child(4):before{
+                        content: '4';
+                    }
+                }
+            }
+        }
+    }
+}
