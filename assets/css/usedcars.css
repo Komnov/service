@@ -1,1 +1,78 @@
-/* No CSS */
+#horizon-filter .horizon-filter_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#horizon-filter .horizon-filter_container .filter__block {
+  border: 1px dashed #C4C4C4;
+  padding: 25px 30px;
+  border-radius: 4px;
+}
+
+#horizon-filter .horizon-filter_container .filter__block .title {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 0 20px 0;
+  display: block;
+  width: 100%;
+}
+
+#horizon-filter .horizon-filter_container .filter__block .links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#horizon-filter .horizon-filter_container .filter__block .links li {
+  display: block;
+  margin: 0 0 13px 0;
+}
+
+#horizon-filter .horizon-filter_container .filter__block .links li a {
+  color: #666666;
+  font-weight: 500;
+  font-size: 14px;
+  border: 2px solid transparent;
+  padding: 4px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#horizon-filter .horizon-filter_container .filter__block .links li a:hover {
+  border: 2px solid #F78F1E;
+}
+
+#horizon-filter .horizon-filter_container .by__mark .links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#horizon-filter .hide__filter {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #F78F1E;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 4px;
+  margin: 20px 0 0 0;
+  padding: 20px 0;
+}
+
+.filter__search .like_h3 span {
+  color: #F78F1E;
+}

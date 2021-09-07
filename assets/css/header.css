@@ -1,3 +1,274 @@
-h1 {
-  color: yellow;
+#header .header__toolbar {
+  width: 100%;
+  background-color: #415968;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+
+#header .header__toolbar .header__toolbar_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px 0;
+}
+
+#header .header__toolbar .header__toolbar_container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .header__toolbar .header__toolbar_container .header__toolbar_adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 60px 0 0;
+}
+
+#header .header__toolbar .header__toolbar_container .header__toolbar_adress:before {
+  content: '';
+  background-image: url(/assets/images/icons/geo.svg);
+  background-size: contain;
+  width: 12px;
+  height: 17px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 0 10px 0 0;
+}
+
+#header .header__toolbar .header__toolbar_container .header__toolbar_phone {
+  margin: 0 20px 0 0;
+}
+
+#header .header__toolbar .header__toolbar_container .header__toolbar_phone a {
+  color: #fff;
+}
+
+#header .header__toolbar .header__toolbar_container .header__toolbar_phone a:last-child {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .header__toolbar .header__toolbar_container .header__toolbar_phone a:last-child:before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  background-color: #F78F1E;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+
+#header .header__toolbar .header__toolbar_container .callback__popup {
+  margin: 0 30px 0 0;
+  position: relative;
+  color: #F78F1E;
+  cursor: pointer;
+}
+
+#header .header__toolbar .header__toolbar_container .callback__popup img {
+  width: 14px;
+  height: 14px;
+  margin: 0 10px 0 0;
+}
+
+#header .header__toolbar .header__toolbar_container .callback__popup span {
+  border-bottom: 1px dashed #F78F1E;
+}
+
+#header .header__toolbar .header__toolbar_container .social__links > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+}
+
+#header .header__toolbar .header__toolbar_container .social__links .vk_link {
+  background-image: url(/assets/images/icons/vk.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 21px;
+  height: 13px;
+  margin: 0 23px 0 0;
+}
+
+#header .header__toolbar .header__toolbar_container .social__links .inst_link {
+  background-image: url(/assets/images/icons/Insta.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+#header .header__container {
+  padding: 10px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+#header .header__container .header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header .header__container .header__logo img {
+  width: 110px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#header .header__container .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 35px 0 75px;
+}
+
+#header .header__container .header__nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+#header .header__container .header__nav .nav .nav_li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#header .header__container .header__nav .nav .nav_li > a {
+  color: #333;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#header .header__container .header__nav .nav .nav_li.have_subnav:after {
+  content: '';
+  background-image: url(/assets/images/icons/arrow-orange.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 6px;
+  display: inline-block;
+  margin: 2px 0 0 5px;
+}
+
+#header .header__container .header__nav .nav_li:hover .subnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: navhover  0.5s ease-in-out;
+          animation: navhover  0.5s ease-in-out;
+  z-index: 10;
+  border-radius: 6px;
+}
+
+#header .header__container .header__nav .subnav {
+  display: none;
+  z-index: -1px;
+  position: absolute;
+  top: 15px;
+  white-space: nowrap;
+  background-color: #fff;
+  padding: 20px 10px 10px 20px;
+  left: -20px;
+  line-height: 20px;
+}
+
+#header .header__container .header__nav .subnav .subnav_li a {
+  color: #333;
+}
+
+#header .header__container .header__auth {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#header .header__container .header__auth a {
+  border: 2px solid #BEBEBE;
+  padding: 12px 15px;
+  color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+#header .header__container .header__auth a:before {
+  content: '';
+  background-image: url(/assets/images/icons/user-auth.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 20px;
+  display: inline-block;
+  margin: 0px 12px 0 0px;
+  background-size: contain;
+}
+
+@-webkit-keyframes navhover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes navhover {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
