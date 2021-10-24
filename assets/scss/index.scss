@@ -114,6 +114,7 @@ $fontd: #333;
             position: relative;
             border-radius: 6px;
             margin-bottom: 13px;
+            justify-content: space-around;
             & .car__card_interaction {
                 position: absolute;
                 left: 25px;
@@ -251,6 +252,7 @@ $fontd: #333;
                     color: $orange;
                     display: flex;
                     align-items: center;
+                    cursor: pointer;
                     &:before {
                         content: '';
                         background-image: url(/assets/images/icons/credit.svg);
@@ -260,6 +262,23 @@ $fontd: #333;
                         margin: 0 5px 0 0;
                         background-size: contain;
                         background-repeat: no-repeat;
+                    }
+                    &:after {
+                        background: rgba(0, 0, 0, 0.8);
+                        border-radius: 8px 8px 8px 0px;
+                        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+                        color: #FFF;
+                        content: attr(data-tooltip);
+                        margin: -38px 0 0 10px;
+                        opacity: 0;
+                        padding: 3px 7px;
+                        position: absolute;
+                        visibility: hidden;
+                        transition: all 0.4s ease-in-out;
+                    }
+                    &:hover::after {
+                        opacity: 1; 
+                        visibility: visible;
                     }
                     & p {
                         border-bottom: 1px dashed $orange;
@@ -280,6 +299,13 @@ $fontd: #333;
                 font-weight: 400;
                 padding: 12px 0;
                 border-radius: 4px;
+                margin-top: auto;
+                &:hover {
+                    background-color: $orange;
+                    color: $fontf;
+                    transition: 0.3s;
+                    border: 2px solid $orange;
+                }
             }
         }
     }
@@ -297,9 +323,15 @@ $fontd: #333;
         & .car__item_img {
             max-width: 260px;
             position: relative;
+            & a {
+                display: inline-block;
+                max-width: 100%;
+                height: 100%;
+            }
             & img {
-                max-width: inherit;
-                object-fit: contain;
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
             }
         }
         & .car__item_sticker {
@@ -325,6 +357,7 @@ $fontd: #333;
             font-size: 20px;
             margin: 0 0 18px 0;
             display: flex;
+            & a {color: $fontd;}
             & > ul {
                 display: flex;
                 margin: 0 0 0 5px;
@@ -435,6 +468,7 @@ $fontd: #333;
                 display: flex;
                 align-items: center;
                 margin: 18px 0 0 0;
+                cursor: pointer;
                 &:before {
                     content: '';
                     background-image: url(/assets/images/icons/credit.svg);
@@ -444,6 +478,23 @@ $fontd: #333;
                     margin: 0 5px 0 0;
                     background-size: contain;
                     background-repeat: no-repeat;
+                }
+                &:after {
+                    background: rgba(0, 0, 0, 0.8);
+                    border-radius: 8px 8px 8px 0px;
+                    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+                    color: #FFF;
+                    content: attr(data-tooltip);
+                    margin: -38px 0 0 10px;
+                    opacity: 0;
+                    padding: 3px 7px;
+                    position: absolute;
+                    visibility: hidden;
+                    transition: all 0.4s ease-in-out;
+                }
+                &:hover::after {
+                    opacity: 1; 
+                    visibility: visible;
                 }
                 & p {
                     border-bottom: 1px dashed $orange;
@@ -472,10 +523,20 @@ $fontd: #333;
             & .buy-reservation {
                 color: $grey;
                 background-color: #E5E5E5;
+                &:hover {
+                    background-color: $orange;
+                    color: $fontf;
+                    transition: 0.3s;
+                }
             }
             & .buy-credit {
                 color: $fontf;
                 background-color: $orange;
+                &:hover {
+                    background-color: $grey;
+                    color: $fontf;
+                    transition: 0.3s;
+                }
             }
         }
     }    

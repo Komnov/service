@@ -161,6 +161,7 @@ $fontd: #333;
                         -ms-flex-align: center;
                         align-items: center;
                         font-weight: 500;
+                        cursor: pointer;
                         &:before {
                             content: '';
                             background-image: url(/assets/images/icons/credit.svg);
@@ -170,6 +171,23 @@ $fontd: #333;
                             margin: 0 5px 0 0;
                             background-size: contain;
                             background-repeat: no-repeat;
+                        }
+                        &:after {
+                            background: rgba(0, 0, 0, 0.8);
+                            border-radius: 8px 8px 8px 0px;
+                            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+                            color: #FFF;
+                            content: attr(data-tooltip);
+                            margin: -38px 0 0 10px;
+                            opacity: 0;
+                            padding: 3px 7px;
+                            position: absolute;
+                            visibility: hidden;
+                            transition: all 0.4s ease-in-out;
+                        }
+                        &:hover::after {
+                            opacity: 1; 
+                            visibility: visible;
                         }
                         & p {
                             border-bottom: 1px dashed #F78F1E;

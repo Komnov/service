@@ -152,6 +152,8 @@
   position: relative;
   border-radius: 6px;
   margin-bottom: 13px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .popular__cars .cars__cards .car__card .car__card_interaction {
@@ -348,6 +350,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .popular__cars .cars__cards .car__card .car__card_price .car__card_price-credit:before {
@@ -359,6 +362,27 @@
   margin: 0 5px 0 0;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.popular__cars .cars__cards .car__card .car__card_price .car__card_price-credit:after {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px 8px 8px 0px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  content: attr(data-tooltip);
+  margin: -38px 0 0 10px;
+  opacity: 0;
+  padding: 3px 7px;
+  position: absolute;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.popular__cars .cars__cards .car__card .car__card_price .car__card_price-credit:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .popular__cars .cars__cards .car__card .car__card_price .car__card_price-credit p {
@@ -386,6 +410,15 @@
   font-weight: 400;
   padding: 12px 0;
   border-radius: 4px;
+  margin-top: auto;
+}
+
+.popular__cars .cars__cards .car__card .car__card_link:hover {
+  background-color: #F78F1E;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #F78F1E;
 }
 
 .used__cars {
@@ -408,10 +441,17 @@
   position: relative;
 }
 
+.used__cars .car__item .car__item_img a {
+  display: inline-block;
+  max-width: 100%;
+  height: 100%;
+}
+
 .used__cars .car__item .car__item_img img {
-  max-width: inherit;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 .used__cars .car__item .car__item_sticker {
@@ -447,6 +487,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.used__cars .car__item .car__item_about-title a {
+  color: #333;
 }
 
 .used__cars .car__item .car__item_about-title > ul {
@@ -608,6 +652,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 18px 0 0 0;
+  cursor: pointer;
 }
 
 .used__cars .car__item .car__item_price .car__item_price-credit:before {
@@ -619,6 +664,27 @@
   margin: 0 5px 0 0;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.used__cars .car__item .car__item_price .car__item_price-credit:after {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px 8px 8px 0px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  content: attr(data-tooltip);
+  margin: -38px 0 0 10px;
+  opacity: 0;
+  padding: 3px 7px;
+  position: absolute;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.used__cars .car__item .car__item_price .car__item_price-credit:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .used__cars .car__item .car__item_price .car__item_price-credit p {
@@ -660,9 +726,23 @@
   background-color: #E5E5E5;
 }
 
+.used__cars .car__item .car__item_buttons .buy-reservation:hover {
+  background-color: #F78F1E;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .used__cars .car__item .car__item_buttons .buy-credit {
   color: #fff;
   background-color: #F78F1E;
+}
+
+.used__cars .car__item .car__item_buttons .buy-credit:hover {
+  background-color: #415968;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .callback__block {
