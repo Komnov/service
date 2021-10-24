@@ -750,6 +750,8 @@ body {
   position: relative;
   border-radius: 6px;
   margin-bottom: 13px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .popular__cars .cars__cards .car__card .car__card_interaction {
@@ -946,6 +948,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .popular__cars .cars__cards .car__card .car__card_price .car__card_price-credit:before {
@@ -957,6 +960,27 @@ body {
   margin: 0 5px 0 0;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.popular__cars .cars__cards .car__card .car__card_price .car__card_price-credit:after {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px 8px 8px 0px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  content: attr(data-tooltip);
+  margin: -38px 0 0 10px;
+  opacity: 0;
+  padding: 3px 7px;
+  position: absolute;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.popular__cars .cars__cards .car__card .car__card_price .car__card_price-credit:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .popular__cars .cars__cards .car__card .car__card_price .car__card_price-credit p {
@@ -984,6 +1008,15 @@ body {
   font-weight: 400;
   padding: 12px 0;
   border-radius: 4px;
+  margin-top: auto;
+}
+
+.popular__cars .cars__cards .car__card .car__card_link:hover {
+  background-color: #F78F1E;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 2px solid #F78F1E;
 }
 
 .used__cars {
@@ -1006,10 +1039,17 @@ body {
   position: relative;
 }
 
+.used__cars .car__item .car__item_img a {
+  display: inline-block;
+  max-width: 100%;
+  height: 100%;
+}
+
 .used__cars .car__item .car__item_img img {
-  max-width: inherit;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 
 .used__cars .car__item .car__item_sticker {
@@ -1045,6 +1085,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.used__cars .car__item .car__item_about-title a {
+  color: #333;
 }
 
 .used__cars .car__item .car__item_about-title > ul {
@@ -1206,6 +1250,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 18px 0 0 0;
+  cursor: pointer;
 }
 
 .used__cars .car__item .car__item_price .car__item_price-credit:before {
@@ -1217,6 +1262,27 @@ body {
   margin: 0 5px 0 0;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.used__cars .car__item .car__item_price .car__item_price-credit:after {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px 8px 8px 0px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  content: attr(data-tooltip);
+  margin: -38px 0 0 10px;
+  opacity: 0;
+  padding: 3px 7px;
+  position: absolute;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.used__cars .car__item .car__item_price .car__item_price-credit:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 .used__cars .car__item .car__item_price .car__item_price-credit p {
@@ -1258,9 +1324,23 @@ body {
   background-color: #E5E5E5;
 }
 
+.used__cars .car__item .car__item_buttons .buy-reservation:hover {
+  background-color: #F78F1E;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .used__cars .car__item .car__item_buttons .buy-credit {
   color: #fff;
   background-color: #F78F1E;
+}
+
+.used__cars .car__item .car__item_buttons .buy-credit:hover {
+  background-color: #415968;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .callback__block {
@@ -2113,6 +2193,63 @@ body {
   max-height: 400px;
 }
 
+#brand-page .brand-top-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#brand-page .brand-top-img .brand-sale {
+  width: 50%;
+}
+
+#brand-page .brand-top-img .brand-sale img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#brand-page .brand-top-img .brand-sale .title {
+  color: #333;
+  margin: 10px 0 10px 0;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#brand-page .brand-top-img .brand-sale .price-container {
+  text-align: center;
+  margin: 30px 0 0 0;
+  position: relative;
+}
+
+#brand-page .brand-top-img .brand-sale .price-container span:first-child {
+  position: absolute;
+  top: -21px;
+  background-color: #fff;
+  left: 38%;
+  padding: 0 10px;
+  color: #F78F1E;
+}
+
+#brand-page .brand-top-img .brand-sale .price-container .price {
+  border: 1px solid #F78F1E;
+  border-radius: 0 10px 0 10px;
+  padding: 10px 18px 2px 18px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #F78F1E;
+}
+
+#brand-page .brand-top-img .brand-sale .price-container .price:after {
+  content: '\20BD';
+  margin-left: 5px;
+}
+
 #brand-page .form__contaner {
   margin: 20px 0 0 0;
 }
@@ -2488,6 +2625,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   font-weight: 500;
+  cursor: pointer;
 }
 
 #product-item .item__container .item__info .item__price .credit .item__price_credit:before {
@@ -2499,6 +2637,27 @@ body {
   margin: 0 5px 0 0;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+#product-item .item__container .item__info .item__price .credit .item__price_credit:after {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px 8px 8px 0px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  color: #FFF;
+  content: attr(data-tooltip);
+  margin: -38px 0 0 10px;
+  opacity: 0;
+  padding: 3px 7px;
+  position: absolute;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#product-item .item__container .item__info .item__price .credit .item__price_credit:hover::after {
+  opacity: 1;
+  visibility: visible;
 }
 
 #product-item .item__container .item__info .item__price .credit .item__price_credit p {

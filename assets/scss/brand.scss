@@ -28,6 +28,45 @@ $fontd: #333;
             max-height: 400px;
         }
     }
+    & .brand-top-img {
+        display: flex;
+        & .brand-sale {
+            width: 50%;
+            & img {width: 100%; object-fit: contain;}
+            & .title {
+                color: $fontd;
+                margin: 10px 0 10px 0;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+            }
+            & .price-container {
+                text-align: center;
+                margin: 30px 0 0 0;
+                position: relative;
+                & span:first-child {
+                    position: absolute;
+                    top: -21px;
+                    background-color: #fff;
+                    left: 38%;
+                    padding: 0 10px;
+                    color: $orange;
+                }
+                & .price {
+                    border: 1px solid $orange;
+                    border-radius: 0 10px 0 10px;
+                    padding: 10px 18px 2px 18px;
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $orange;
+                    &:after {
+                        content: '\20BD';
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
     & .form__contaner {
         margin: 20px 0 0 0; 
             & form {
